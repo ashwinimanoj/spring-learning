@@ -16,6 +16,14 @@
     		<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
     
+    <bean id="myCricketCoach"
+    	class="com.example.springdemo.CricketCoach">
+    	
+    	<property name="fortuneService" ref="myFortune"></property>
+    	<property name="emailAddress" value="something@email.com"></property>
+    	<property name="team" value="My Awesome Team"></property>
+    </bean>
+    
 </beans>
 
 
