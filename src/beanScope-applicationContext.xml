@@ -12,7 +12,8 @@
     	class="com.example.springdemo.HappyFortuneService">	
     </bean>
     <bean id="myCoach"
-    	scope="prototype"
+    	init-method="initMethod"
+    	destroy-method="destroyMethod"
     	class="com.example.springdemo.TrackCoach">
     		<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
